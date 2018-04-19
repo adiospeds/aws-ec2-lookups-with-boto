@@ -12,7 +12,7 @@ Deployment:
 ```bash
 
 #Goto ur shell to deploy the app and run below commands:
-docker run -v ./DB:/var/lib/mysql -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=mypassword -d mysql
+docker run -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=mypassword -d mysql
 
 cd awsapp && docker build --no-cache -t awsapp .
 docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp awsapp ./aws-lookup.py -h
