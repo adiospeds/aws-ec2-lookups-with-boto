@@ -84,14 +84,13 @@ def ViewAcc(cur):
     return AccList
 
 if __name__ == "__main__":
- 
     args = parse_arguments()
     ### For Cosmetics
     rows, columns = os.popen('stty size', 'r').read().split()
 
     ### Code begins
     Master_key =  'MoveToVaultLater8394580183429013'
-    MYSQL_SERVER = "127.0.0.1"
+    MYSQL_SERVER = "172.17.0.2"
     MYSQL_PASSWORD = "mypassword"
     MYSQL_USER = "root"
     try:
