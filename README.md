@@ -23,7 +23,7 @@ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/sr
 Usage:
 ```
 #To register an aws account for scanning run(you can register multiple users):
-docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp \-w /usr/src/myapp awsapp ./aws-lookup.py -r
+docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp awsapp ./aws-lookup.py -r
 
 #To scan all registered users run:
 docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp awsapp ./aws-lookup.py -s
