@@ -8,8 +8,14 @@ This is small example utility create with boto3 that can be used to pull ec2 dat
   - Attach the role to the user.
   - Generate a access key and secret key for the user.
 
+
+
 Deployment:
+
 ```bash
+
+Clone the repo to your machine
+git clone https://github.com/adiospeds/aws-ec2-lookups-with-boto.git awsapp && cd awsapp
 
 #Goto ur shell to deploy the app and run below commands:
 docker run -p 127.0.0.1:3306:3306 -e MYSQL_ROOT_PASSWORD=mypassword -d mysql
