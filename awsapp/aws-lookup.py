@@ -90,7 +90,7 @@ if __name__ == "__main__":
 
     ### Code begins
     Master_key =  'MoveToVaultLater8394580183429013'
-    MYSQL_SERVER = os.environ['ABC_PORT_3306_TCP_ADDR']
+    MYSQL_SERVER = os.environ['MYSQL_PORT_3306_TCP_ADDR']
     MYSQL_PASSWORD = "mypassword"
     MYSQL_USER = "root"
     try:
